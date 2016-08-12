@@ -32,7 +32,7 @@
 		AA5035C41D397C190087A8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5035C71D397C190087A8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5035C91D397C190087A8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForceIt_Icon.png; sourceTree = "<group>"; };
+		AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ForceIt_Icon.png; path = "ForceIt!/ForceIt_Icon.png"; sourceTree = "<group>"; };
 		AA7F649D1D5257280012030D /* NoteBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteBookViewController.swift; sourceTree = "<group>"; };
 		AA7F649F1D52783A0012030D /* NewNoteBookEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteBookEntryViewController.swift; sourceTree = "<group>"; };
 		AAF394611D3A64D000828C80 /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +61,7 @@
 				AAF394891D3D71D300828C80 /* 999.png */,
 				AAF394851D3D70C600828C80 /* Hospitals.png */,
 				AAF394861D3D70C600828C80 /* Local Auth.png */,
+				AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */,
 				AA5035BC1D397C190087A8A3 /* ForceIt! */,
 				AA5035BB1D397C190087A8A3 /* Products */,
 			);
@@ -86,7 +87,6 @@
 				AAF3948F1D3D7E8400828C80 /* hospitalViewController.swift */,
 				AAF394911D3D7EB400828C80 /* localAuthViewController.swift */,
 				AA5035C11D397C190087A8A3 /* Main.storyboard */,
-				AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */,
 				AA5035C41D397C190087A8A3 /* Assets.xcassets */,
 				AA5035C61D397C190087A8A3 /* LaunchScreen.storyboard */,
 				AA5035C91D397C190087A8A3 /* Info.plist */,
