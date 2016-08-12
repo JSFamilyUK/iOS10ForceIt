@@ -298,7 +298,7 @@
 				DEVELOPMENT_TEAM = A2DHR64QJ4;
 				INFOPLIST_FILE = "ForceIt!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.jsfamily.ForceIt-";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.jsfamily.ForceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -311,7 +311,7 @@
 				DEVELOPMENT_TEAM = A2DHR64QJ4;
 				INFOPLIST_FILE = "ForceIt!/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.jsfamily.ForceIt-";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.jsfamily.ForceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
