@@ -87,8 +87,8 @@
 				AAF3948F1D3D7E8400828C80 /* hospitalViewController.swift */,
 				AAF394911D3D7EB400828C80 /* localAuthViewController.swift */,
 				AA5035C11D397C190087A8A3 /* Main.storyboard */,
-				AA5035C41D397C190087A8A3 /* Assets.xcassets */,
 				AA5035C61D397C190087A8A3 /* LaunchScreen.storyboard */,
+				AA5035C41D397C190087A8A3 /* Assets.xcassets */,
 				AA5035C91D397C190087A8A3 /* Info.plist */,
 			);
 			path = "ForceIt!";
