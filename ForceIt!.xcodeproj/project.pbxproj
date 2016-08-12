@@ -33,7 +33,7 @@
 		AA5035C71D397C190087A8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5035C91D397C190087A8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA5035CF1D3983070087A8A3 /* ForceIt_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForceIt_Icon.png; sourceTree = "<group>"; };
-		AA7F649D1D5257280012030D /* NoteBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteBookViewController.swift; path = ../NoteBookViewController.swift; sourceTree = "<group>"; };
+		AA7F649D1D5257280012030D /* NoteBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteBookViewController.swift; sourceTree = "<group>"; };
 		AA7F649F1D52783A0012030D /* NewNoteBookEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteBookEntryViewController.swift; sourceTree = "<group>"; };
 		AAF394611D3A64D000828C80 /* DirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		AAF394851D3D70C600828C80 /* Hospitals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hospitals.png; path = "ForceIt!/Hospitals.png"; sourceTree = "<group>"; };
