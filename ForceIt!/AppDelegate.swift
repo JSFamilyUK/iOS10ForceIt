@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+       Parse.enableLocalDatastore()
+        //return true
+    
+        let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
+            ParseMutableClientConfiguration.applicationId = "myappid"
+            ParseMutableClientConfiguration.clientKey = "mymasterkey"
+            ParseMutableClientConfiguration.server = "http://ec2-52-24-55-92.us-west-2.compute.amazonaws.com/parse"
+    })
+    
+        Parse.initialize(with: parseConfiguration)
+        
+        
+        // ****************************************************************************
+        // Uncomment and fill in with your Parse credentials:
+        // Parse.setApplicationId("your_application_id", clientKey: "your_client_key")
+        //
+        // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
+        // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
+        // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:
+        // PFFacebookUtils.initializeFacebook()
+        // ****************************************************************************
+        
+        PFUser.enableAutomaticUser()
+        
+        let defaultACL = PFACL();
+        
+        // If you would like all objects to be private by default, remove this line.
+        defaultACL.getPublicReadAccess = true
+        
+        PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
+        
+        if application.applicationState != UIApplicationState.background {
+            // Track an app open here if we launch with a push, unless
+            // "content_available" was used to trigger a background push (introduced in iOS 7).
+            // In that case, we skip tracking here to avoid double counting the app-open.
+            
+            let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
+            let oldPushHandlerOnly = !self.responds(to: #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
+            var noPushPayload = false;
+            if let options = launchOptions {
+                noPushPayload = options[UIApplicationLaunchOptionsRemoteNotificationKey] != nil;
+            }
+            if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
+                PFAnalytics.trackAppOpened(launchOptions: launchOptions)
+            }
+        }
+        
         return true
     }
 
@@ -41,6 +88,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-
