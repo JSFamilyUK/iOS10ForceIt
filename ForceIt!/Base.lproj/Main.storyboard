@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdx-6H-2UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="1642"/>
+            <point key="canvasLocation" x="257" y="2395"/>
         </scene>
         <!--Directory-->
         <scene sceneID="IW9-Iu-3gA">
@@ -670,7 +670,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rwv-Iq-XiJ" id="OX0-KW-bto">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <frame key="frameInset" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -700,6 +700,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKI-m4-2vH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916" y="896"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iXI-Pd-Bbe">
+            <objects>
+                <navigationController id="mkV-Fh-bMD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BUg-xC-oay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaz-iG-OIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="1654"/>
         </scene>
         <!--Title-->
         <scene sceneID="KLt-au-4vl">
@@ -759,7 +772,7 @@
         <image name="Local Auth.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="qvD-mR-ipu"/>
         <segue reference="8qh-N9-DpW"/>
-        <segue reference="IJG-AC-HWz"/>
     </inferredMetricsTieBreakers>
 </document>
